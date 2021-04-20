@@ -1,0 +1,17 @@
+version: '3'
+services:
+  proxy:
+    image: nginx:latest
+    ports:
+      - 8081:8080
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+
+
+  tileserver:
+    image: maptiler/tileserver-gl
+    ports:
+      - 8080:80
+    command: ["-p", "80", "--verbose"]
+    volumes:
+      - ./docker/data:/data:ro
