@@ -4,16 +4,16 @@
   "description": "",
   "scripts": {
     "build": "rollup -c rollup.config.js",
+    "build-maplibre": "rollup -c rollup.maplibre.js",
     "serve": "es-dev-server",
-    "package": "rimraf dist && rollup -c rollup.config.js && sed -i.bak 's/type=\"module\" src=\"index.js\"/src=\"bundle.js\"/g' dist/index.html && rm dist/*.bak",
+    "package": "rimraf dist && rollup -c rollup.config.js && sed -i.bak 's/type=.module. src=.index.js./src=\"bundle.js\"/g' dist/index.html && rm dist/*.bak",
     "clean": "rimraf dist"
   },
   "author": "Alex Davies-Moore",
   "license": "Apache",
-  "dependencies": {
-    "maplibre-gl": ">=1.14.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
     "es-dev-server": "^1.60.2",
     "prettier": "2.2.1",

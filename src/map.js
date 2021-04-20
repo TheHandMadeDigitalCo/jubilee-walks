@@ -1,5 +1,4 @@
-// import maplibregl from 'maplibre-gl';
-import { AttributionControl, GeolocateControl, Map, NavigationControl } from 'https://cdn.skypack.dev/maplibre-gl';
+import { AttributionControl, GeolocateControl, Map, NavigationControl } from './ui/map/maplibre';
 import { uuidv4 } from './util';
 
 class WalkMap {

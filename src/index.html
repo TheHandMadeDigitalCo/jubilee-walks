@@ -5,6 +5,7 @@
     <title>Corfe Mullen: Jubilee Walks</title>
     <meta content='initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport' />
     <link href='https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js'></script>
     <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
 
     <style>
@@ -67,12 +68,15 @@
         #mobile-controls .layer:nth-child(1) {
             transition: transform 0.25s 0.1s;
         }
+
         #mobile-controls .layer:nth-child(2) {
             transition: transform 0.25s 0.125s;
         }
+
         #mobile-controls .layer:nth-child(3) {
             transition: transform 0.25s 0.15s;
         }
+
         #mobile-controls .layer:nth-child(4) {
             transition: transform 0.25s 0.175s;
         }
@@ -109,9 +113,9 @@
 <div id='mobile-controls'></div>
 <script type='application/javascript'>
     const config = {
-        'host': 'http://localhost:8080'
-    }
+        'host': 'http://localhost:8080',
+    };
 </script>
-<script src='index.js' type='module'></script>
+<script type='module' src='index.js'></script>
 </body>
 </html>

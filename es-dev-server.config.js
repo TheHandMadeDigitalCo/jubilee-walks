@@ -7,6 +7,7 @@ module.exports = {
     rootDir: 'src',
     plugins: [],
     preserveSymlinks: true,
+    moduleDirs: ['node_modules'],
     open: true,
     middlewares: [
         function rewriteIndex(context, next) {
