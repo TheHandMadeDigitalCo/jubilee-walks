@@ -6,11 +6,9 @@ class WalkMap {
         this._loaded = false;
         this._map = new Map({
             container: container,
-            // style: 'https://api.maptiler.com/maps/858d29b2-add6-4b67-a123-602bb3fabf4d/style.json?key=Ufz2DspPpwHKhct0Kj6J',
-            // style: 'https://api.maptiler.com/maps/pastel/style.json?key=Ufz2DspPpwHKhct0Kj6J',
             style: 'https://api.maptiler.com/maps/bright/style.json?key=Ufz2DspPpwHKhct0Kj6J',
             center: [-2.017322, 50.774277],
-            zoom: 12,
+            zoom: 14,
             minZoom: 12,
             maxZoom: 19,
             pitch: 0,
