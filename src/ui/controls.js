@@ -30,9 +30,6 @@ class ActionButton {
     }
 }
 
-/**
- *
- */
 class TrailToggleButton {
 
     constructor(label, container, layerId, colour) {

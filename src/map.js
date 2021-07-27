@@ -6,21 +6,16 @@ class WalkMap {
         this._loaded = false;
         this._map = new Map({
             container: container,
-            style: 'styles/overview-style.json',
+            // style: 'https://api.maptiler.com/maps/858d29b2-add6-4b67-a123-602bb3fabf4d/style.json?key=Ufz2DspPpwHKhct0Kj6J',
+            // style: 'https://api.maptiler.com/maps/pastel/style.json?key=Ufz2DspPpwHKhct0Kj6J',
+            style: 'https://api.maptiler.com/maps/bright/style.json?key=Ufz2DspPpwHKhct0Kj6J',
             center: [-2.017322, 50.774277],
             zoom: 12,
             minZoom: 12,
             maxZoom: 19,
             pitch: 0,
             hash: true,
-            attributionControl: false,
-            transformRequest: (url, resourceType) => {
-                if (url.startsWith('http://{host}')) {
-                    return {
-                        url: url.replace('http://{host}', host),
-                    };
-                }
-            },
+            attributionControl: false
         });
 
         this._map.addControl(new GeolocateControl({
@@ -90,7 +85,7 @@ class TrailSource {
             },
             'paint': {
                 'line-color': colour,
-                'line-width': 1.75,
+                'line-width': 2.5,
                 'line-dasharray': [
                     3,
                     3,
@@ -110,10 +105,10 @@ class TrailSource {
                 'visibility': 'none',
             },
             "paint": {
-                "text-color": colour,
+                "text-color": "white",
                 "text-halo-blur": 1,
-                "text-halo-color": "rgba(255,255,255,0.75)",
-                "text-halo-width": 1
+                "text-halo-color": colour,
+                "text-halo-width": 2
             },
         };
     }
