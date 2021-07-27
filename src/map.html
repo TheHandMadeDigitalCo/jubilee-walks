@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Corfe Mullen: Jubilee Walks</title>
+    <meta content='initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport' />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://thehandmadedigitalco.github.io fonts.gstatic.com fonts.googleapis.com *.maptiler.com localhost:*; img-src 'self' data: blob: ; worker-src blob:; child-src 'self' data: blob:; font-src  'self' data:">
+    <link href='https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://cdn.maptiler.com/maplibre-gl-js/v1.13.0-rc.4/mapbox-gl.js'></script>
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Andale Mono", Arial, "sans-serif";
+            font-weight: normal;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #overlay-icon {
+            background: white;
+            border-radius: 100%;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.75) 0 3px 8px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #overlay-icon img {
+            width: 46px;
+            height: 38px;
+        }
+
+        #mobile-controls {
+            position: absolute;
+            right: 1em;
+            bottom: 4em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #mobile-controls .control {
+            margin-top: 1em;
+        }
+
+        #mobile-controls .layer {
+            padding: 0.5em;
+            box-shadow: rgba(0, 0, 0, 0.75) 0 3px 8px;
+            border-radius: 0.25em;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #mobile-controls .layer:nth-child(1) {
+            transition: transform 0.25s 0.1s;
+        }
+
+        #mobile-controls .layer:nth-child(2) {
+            transition: transform 0.25s 0.125s;
+        }
+
+        #mobile-controls .layer:nth-child(3) {
+            transition: transform 0.25s 0.15s;
+        }
+
+        #mobile-controls .layer:nth-child(4) {
+            transition: transform 0.25s 0.175s;
+        }
+
+        #mobile-controls .layer.hide {
+            transform: translate(200px);
+        }
+
+        #mobile-controls .layer.show {
+            transform: translate(0px);
+        }
+
+
+        .layer .enabled {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            border-radius: 10%;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        .hidden {
+            display: none
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<div id='mobile-controls'></div>
+<script type='module' src='index.js'></script>
+</body>
+</html>

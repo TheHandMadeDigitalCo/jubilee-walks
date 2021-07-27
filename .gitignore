@@ -1,0 +1,5 @@
+docker/data/*.mbtiles
+**/node_modules
+.npmrc
+.idea
+**/*.iml

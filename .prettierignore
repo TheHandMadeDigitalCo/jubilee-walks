@@ -1,0 +1,5 @@
+node_modules/*
+docs/*
+docs-src/*
+es-dev-server.config.js
+rollup.config.js
