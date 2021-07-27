@@ -54,12 +54,10 @@
         }
 
         #mobile-controls .layer {
-            width: 45px;
-            height: 45px;
+            padding: 0.5em;
             box-shadow: rgba(0, 0, 0, 0.75) 0 3px 8px;
-            border-radius: 100%;
+            border-radius: 0.25em;
             text-align: center;
-            line-height: 45px;
             font-weight: bold;
             color: white;
             position: relative;
@@ -83,7 +81,7 @@
         }
 
         #mobile-controls .layer.hide {
-            transform: translate(100px);
+            transform: translate(200px);
         }
 
         #mobile-controls .layer.show {
@@ -95,7 +93,7 @@
             position: absolute;
             right: -5px;
             top: -5px;
-            border-radius: 100%;
+            border-radius: 10%;
             width: 20px;
             height: 20px;
             line-height: 20px;
@@ -114,7 +112,6 @@
 <div id='mobile-controls'></div>
 <script type='application/javascript'>
     const config = {
-        'host': 'http://localhost:8080',
     };
 </script>
 <script type='module' src='index.js'></script>
