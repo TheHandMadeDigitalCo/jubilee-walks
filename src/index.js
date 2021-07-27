@@ -6,9 +6,9 @@ class Application {
         this._walkMap = new WalkMap('map');
 
         this._walks = [
-            new TrailSource('./data/geojson/parish.walk.1.geojson', '#487bb6', 'Parish Walk'),
-            new TrailSource('./data/geojson/eastend.walk.2.geojson', '#958cae', 'East End Walk'),
-            new TrailSource('./data/geojson/heritage.walk.3.geojson', '#b78200', 'Heritage Walk'),
+            new TrailSource('./data/geojson/parish.walk.1.geojson', '#1985ff', 'Parish Walk'),
+            new TrailSource('./data/geojson/eastend.walk.2.geojson', '#0d9600', 'East End Walk'),
+            new TrailSource('./data/geojson/heritage.walk.3.geojson', '#9300c4', 'Heritage Walk'),
             new TrailSource('./data/geojson/heath.walk.4.geojson', '#dc0608', 'Heath Walk'),
         ];
         this._mobileControls = document.getElementById('mobile-controls');

@@ -6,7 +6,7 @@ class WalkMap {
         this._loaded = false;
         this._map = new Map({
             container: container,
-            style: 'https://api.maptiler.com/maps/bright/style.json?key=Ufz2DspPpwHKhct0Kj6J',
+            style: 'https://api.maptiler.com/maps/streets/style.json?key=Ufz2DspPpwHKhct0Kj6J',
             center: [-2.017322, 50.774277],
             zoom: 14,
             minZoom: 12,
