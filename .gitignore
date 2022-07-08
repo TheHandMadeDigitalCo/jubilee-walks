@@ -3,3 +3,4 @@ docker/data/*.mbtiles
 .npmrc
 .idea
 **/*.iml
+dist

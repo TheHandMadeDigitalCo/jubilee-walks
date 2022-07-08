@@ -2,7 +2,7 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import copy from 'rollup-plugin-copy';
 
-const toFolder = 'docs';
+const toFolder = 'dist';
 
 export default {
     input: 'src/index.js',
@@ -21,7 +21,7 @@ export default {
         copy({
             targets: [
                 {
-                    src: 'src/map.html',
+                    src: 'src/about.html',
                     dest: toFolder,
                 },
                 {

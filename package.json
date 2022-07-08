@@ -6,8 +6,8 @@
     "build": "rollup -c rollup.config.js",
     "build-maplibre": "rollup -c rollup.maplibre.js",
     "serve": "es-dev-server",
-    "package": "rimraf docs && rollup -c rollup.config.js && sed -i.bak 's/type=.module. src=.index.js./src=\"bundle.js\"/g' docs/map.html && rm docs/*.bak",
-    "clean": "rimraf docs"
+    "package": "rimraf dist && rollup -c rollup.config.js && sed -i.bak 's/type=.module. src=.index.js./src=\"bundle.js\"/g' dist/index.html && rm dist/*.bak",
+    "clean": "rimraf dist"
   },
   "author": "Alex Davies-Moore",
   "license": "Apache",
