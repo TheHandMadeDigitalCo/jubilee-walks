@@ -28,7 +28,7 @@ class WalkMap {
         );
         this._map.addControl(
             new AttributionControl({
-                customAttribution: "&copy; Corfe Mullen Town Council &amp; Wendy Dix"
+                customAttribution: "&copy; <a href='about.html'>Corfe Mullen Town Council &amp; Wendy Dix</a>"
             }),
             'bottom-left',
         );

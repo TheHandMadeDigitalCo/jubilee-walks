@@ -1,6 +1,6 @@
-export const Map = window.mapboxgl.Map;
-export const AttributionControl = window.mapboxgl.AttributionControl;
-export const GeolocateControl = window.mapboxgl.GeolocateControl;
-export const NavigationControl = window.mapboxgl.NavigationControl;
+export const Map = window.maplibregl.Map;
+export const AttributionControl = window.maplibregl.AttributionControl;
+export const GeolocateControl = window.maplibregl.GeolocateControl;
+export const NavigationControl = window.maplibregl.NavigationControl;
 
 
