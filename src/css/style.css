@@ -16,4 +16,9 @@ th {
     text-align: left;
 }
 
+.maplibregl-ctrl-top-right {
+    margin-top: 2em;
+    margin-right: 2em;
+}
+
 
